@@ -1,0 +1,402 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "course",
+      "name": "Python for DBMS Elective",
+      "id": "python_basics"
+    },
+    {
+      "type": "concept",
+      "name": "Variables & Data Types",
+      "difficulty": 1,
+      "id": "variables"
+    },
+    {
+      "type": "concept",
+      "name": "Operators & Expressions",
+      "difficulty": 1,
+      "id": "operators"
+    },
+    {
+      "type": "concept",
+      "name": "Conditionals (if/else)",
+      "difficulty": 1,
+      "id": "conditionals"
+    },
+    {
+      "type": "concept",
+      "name": "Loops (for/while)",
+      "difficulty": 2,
+      "id": "loops"
+    },
+    {
+      "type": "concept",
+      "name": "Functions",
+      "difficulty": 2,
+      "id": "functions"
+    },
+    {
+      "type": "concept",
+      "name": "Lists & Tuples",
+      "difficulty": 2,
+      "id": "lists"
+    },
+    {
+      "type": "concept",
+      "name": "Dictionaries",
+      "difficulty": 2,
+      "id": "dictionaries"
+    },
+    {
+      "type": "concept",
+      "name": "String Handling",
+      "difficulty": 2,
+      "id": "strings"
+    },
+    {
+      "type": "concept",
+      "name": "File I/O",
+      "difficulty": 2,
+      "id": "file_io"
+    },
+    {
+      "type": "concept",
+      "name": "Exception Handling",
+      "difficulty": 3,
+      "id": "exceptions"
+    },
+    {
+      "type": "concept",
+      "name": "Recursion",
+      "difficulty": 3,
+      "id": "recursion"
+    },
+    {
+      "type": "concept",
+      "name": "Modules & Packages",
+      "difficulty": 3,
+      "id": "modules"
+    },
+    {
+      "type": "skill",
+      "name": "Iteration",
+      "id": "skill_iteration"
+    },
+    {
+      "type": "skill",
+      "name": "Abstraction",
+      "id": "skill_abstraction"
+    },
+    {
+      "type": "skill",
+      "name": "Recursive thinking",
+      "id": "skill_recursive_thinking"
+    },
+    {
+      "type": "skill",
+      "name": "Defensive programming",
+      "id": "skill_defensive_programming"
+    },
+    {
+      "type": "resource",
+      "name": "Variables & Data Types \u2014 intro notes",
+      "id": "resource_variables"
+    },
+    {
+      "type": "resource",
+      "name": "Operators & Expressions \u2014 intro notes",
+      "id": "resource_operators"
+    },
+    {
+      "type": "resource",
+      "name": "Conditionals (if/else) \u2014 intro notes",
+      "id": "resource_conditionals"
+    },
+    {
+      "type": "resource",
+      "name": "Loops (for/while) \u2014 intro notes",
+      "id": "resource_loops"
+    },
+    {
+      "type": "resource",
+      "name": "Functions \u2014 intro notes",
+      "id": "resource_functions"
+    },
+    {
+      "type": "resource",
+      "name": "Lists & Tuples \u2014 intro notes",
+      "id": "resource_lists"
+    },
+    {
+      "type": "resource",
+      "name": "Dictionaries \u2014 intro notes",
+      "id": "resource_dictionaries"
+    },
+    {
+      "type": "resource",
+      "name": "String Handling \u2014 intro notes",
+      "id": "resource_strings"
+    },
+    {
+      "type": "resource",
+      "name": "File I/O \u2014 intro notes",
+      "id": "resource_file_io"
+    },
+    {
+      "type": "resource",
+      "name": "Exception Handling \u2014 intro notes",
+      "id": "resource_exceptions"
+    },
+    {
+      "type": "resource",
+      "name": "Recursion \u2014 intro notes",
+      "id": "resource_recursion"
+    },
+    {
+      "type": "resource",
+      "name": "Modules & Packages \u2014 intro notes",
+      "id": "resource_modules"
+    },
+    {
+      "node_type": "rule",
+      "rule_id": "R1_prereq_order",
+      "text": "Prerequisites must precede the concepts that depend on them.",
+      "applies_to": "python_basics",
+      "rule_kind": "prerequisite_order",
+      "id": "R1_prereq_order"
+    },
+    {
+      "node_type": "rule",
+      "rule_id": "R2_max_weekly_load",
+      "text": "A plan may not introduce more than 4 new concepts without a checkpoint.",
+      "applies_to": "python_basics",
+      "rule_kind": "max_load",
+      "max_new_concepts": 4,
+      "id": "R2_max_weekly_load"
+    },
+    {
+      "node_type": "rule",
+      "rule_id": "R3_mandatory_concept",
+      "text": "Any plan for this course must include 'functions' before completion.",
+      "applies_to": "python_basics",
+      "rule_kind": "mandatory_concept",
+      "concept_id": "functions",
+      "id": "R3_mandatory_concept"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "variables"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "operators"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "conditionals"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "loops"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "functions"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "lists"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "dictionaries"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "strings"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "file_io"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "exceptions"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "recursion"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "python_basics",
+      "target": "modules"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "variables",
+      "target": "operators"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "variables",
+      "target": "strings"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "variables",
+      "target": "lists"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "variables",
+      "target": "resource_variables"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "operators",
+      "target": "conditionals"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "operators",
+      "target": "resource_operators"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "conditionals",
+      "target": "loops"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "conditionals",
+      "target": "resource_conditionals"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "loops",
+      "target": "functions"
+    },
+    {
+      "relation": "HAS_SKILL",
+      "source": "loops",
+      "target": "skill_iteration"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "loops",
+      "target": "resource_loops"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "functions",
+      "target": "recursion"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "functions",
+      "target": "modules"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "functions",
+      "target": "exceptions"
+    },
+    {
+      "relation": "HAS_SKILL",
+      "source": "functions",
+      "target": "skill_abstraction"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "functions",
+      "target": "resource_functions"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "lists",
+      "target": "dictionaries"
+    },
+    {
+      "relation": "PREREQUISITE_OF",
+      "source": "lists",
+      "target": "file_io"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "lists",
+      "target": "resource_lists"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "dictionaries",
+      "target": "resource_dictionaries"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "strings",
+      "target": "resource_strings"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "file_io",
+      "target": "resource_file_io"
+    },
+    {
+      "relation": "HAS_SKILL",
+      "source": "exceptions",
+      "target": "skill_defensive_programming"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "exceptions",
+      "target": "resource_exceptions"
+    },
+    {
+      "relation": "HAS_SKILL",
+      "source": "recursion",
+      "target": "skill_recursive_thinking"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "recursion",
+      "target": "resource_recursion"
+    },
+    {
+      "relation": "HAS_RESOURCE",
+      "source": "modules",
+      "target": "resource_modules"
+    },
+    {
+      "relation": "APPLIES_TO",
+      "source": "R1_prereq_order",
+      "target": "python_basics"
+    },
+    {
+      "relation": "APPLIES_TO",
+      "source": "R2_max_weekly_load",
+      "target": "python_basics"
+    },
+    {
+      "relation": "APPLIES_TO",
+      "source": "R3_mandatory_concept",
+      "target": "python_basics"
+    }
+  ]
+}

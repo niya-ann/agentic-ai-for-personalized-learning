@@ -1,0 +1,22 @@
+# Tested with Python 3.11/3.12 on Sept 2026.
+# Exact versions used during development are noted in comments; plain `pip install -r requirements.txt`
+# will pull current compatible versions, which is fine.
+
+fastapi           # tested: 0.138.2
+uvicorn[standard]  # tested: 0.49.0
+streamlit          # tested: 1.63.0
+sqlalchemy         # tested: 2.0.52  (used for reference only; app.db uses raw sqlite3)
+networkx           # tested: 3.6.1
+pandas             # tested: 3.0.2
+scikit-learn       # tested: 1.8.0
+flwr               # tested: 1.36.0
+faker              # tested: 40.38.0
+matplotlib         # tested: 3.10.8
+pyvis              # tested: 0.3.2
+numpy              # tested: 2.4.4
+pydantic           # tested: 2.13.5
+joblib             # tested: 1.5.3
+requests           # tested: 2.33.1
+
+# Optional (only if you attempt Phase 9 local LLM polish):
+# ollama must be installed separately (https://ollama.com) -- not a pip package
